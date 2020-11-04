@@ -1,5 +1,116 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  //navigation
+  nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top
+    .container
+      a.navbar-brand(href='index.html') Start Bootstrap
+      button.navbar-toggler.navbar-toggler-right(type='button' data-toggle='collapse' data-target='#navbarResponsive' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation')
+        | Menu
+        i.fas.fa-bars
+      #navbarResponsive.collapse.navbar-collapse
+        ul.navbar-nav.ml-auto
+          li.nav-item
+            a.nav-link(href='index.html') INICIO
+          li.nav-item
+            a.nav-link(href='about.html') NOSOTROS
+          li.nav-item
+            a.nav-link(href='post.html') LIBRERÍAS
+          li.nav-item
+            a.nav-link(href='contact.html') CONTACTO
+  // Page Header
+  header.masthead(style="background-image: url('/images/home-bg.jpg')")
+    .overlay
+    .container
+      .row
+        .col-lg-8.col-md-10.mx-auto
+          .site-heading
+            h2.post-title RED LIBRERIAS
+            span.subheading TUS LIBROS FAVORITOS EN UN SOLO LUGAR
+  // Main Content
+  .container
+    .row
+      .col-lg-8.col-md-10.mx-auto
+        .post-preview
+          h2.post-title ENCUENTRA TU LIBRERÍA MAS CERCANA !
+    #main_map
+    .row
+      
+      .col-lg-8.col-md-10.mx-auto
+        .post-preview
+          a(href='post.html')
+            h2.post-title
+              | Man must explore, and this is exploration at its greatest
+            h3.post-subtitle
+              | Problems look mighty small from 150 miles up
+          p.post-meta
+            | Posted by
+            a(href='#') Start Bootstrap
+            |             on September 24, 2019
+        hr
+        .post-preview
+          a(href='post.html')
+            h2.post-title
+              | I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
+          p.post-meta
+            | Posted by
+            a(href='#') Start Bootstrap
+            |             on September 18, 2019
+        hr
+        .post-preview
+          a(href='post.html')
+            h2.post-title
+              | Science has not yet mastered prophecy
+            h3.post-subtitle
+              | We predict too much for the next year and yet far too little for the next ten.
+          p.post-meta
+            | Posted by
+            a(href='#') Start Bootstrap
+            |             on August 24, 2019
+        hr
+        .post-preview
+          a(href='post.html')
+            h2.post-title
+              | Failure is not an option
+            h3.post-subtitle
+              | Many say exploration is part of our destiny, but it’s actually our duty to future generations.
+          p.post-meta
+            | Posted by
+            a(href='#') Start Bootstrap
+            |             on July 8, 2019
+        hr
+        // Pager
+        .clearfix
+          a.btn.btn-primary.float-right(href='#') Older Posts →
+  hr
+  // Footer
+  footer
+    .container
+      .row
+        .col-lg-8.col-md-10.mx-auto
+          ul.list-inline.text-center
+            li.list-inline-item
+              a(href='#')
+                span.fa-stack.fa-lg
+                  i.fas.fa-circle.fa-stack-2x
+                  i.fab.fa-twitter.fa-stack-1x.fa-inverse
+            li.list-inline-item
+              a(href='#')
+                span.fa-stack.fa-lg
+                  i.fas.fa-circle.fa-stack-2x
+                  i.fab.fa-facebook-f.fa-stack-1x.fa-inverse
+            li.list-inline-item
+              a(href='#')
+                span.fa-stack.fa-lg
+                  i.fas.fa-circle.fa-stack-2x
+                  i.fab.fa-github.fa-stack-1x.fa-inverse
+          p.copyright.text-muted Copyright © Your Website 2020
+  // Bootstrap core JavaScript
+  script(src='/vendor/jquery/jquery.min.js')
+  script(src='/vendor/bootstrap/js/bootstrap.bundle.min.js')
+  // Custom scripts for this template
+  script(src='/javascripts/clean-blog.min.js')
+
+  
+  script(src='https://unpkg.com/leaflet@1.7.1/dist/leaflet.js' integrity='sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==' crossorigin='')
+  script(src='/javascripts/map.js')

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Clean Blog - Start Bootstrap Theme</title>
+    <!-- Bootstrap core CSS-->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template-->
+    <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <!-- Custom styles for this template-->
+    <link href="/stylesheets/clean-blog.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="">
+    <link href="/stylesheets/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <!--navigation-->
+    <nav id="mainNav" class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container"><a href="index.html" class="navbar-brand">Start Bootstrap</a>
+        <button type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right">Menu<i class="fas fa-bars"></i></button>
+        <div id="navbarResponsive" class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="index.html" class="nav-link">INICIO</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">NOSOTROS</a></li>
+            <li class="nav-item"><a href="post.html" class="nav-link">LIBRERÍAS</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">CONTACTO</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Page Header-->
+    <header style="background-image: url('/images/home-bg.jpg')" class="masthead">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="site-heading">
+              <h2 class="post-title">RED LIBRERIAS</h2><span class="subheading">TUS LIBROS FAVORITOS EN UN SOLO LUGAR</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Main Content-->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-preview">
+            <h2 class="post-title">ENCUENTRA TU LIBRERÍA MAS CERCANA !</h2>
+          </div>
+        </div>
+      </div>
+      <div id="main_map"></div>
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-preview"><a href="post.html">
+              <h2 class="post-title">Man must explore, and this is exploration at its greatest</h2>
+              <h3 class="post-subtitle">Problems look mighty small from 150 miles up</h3></a>
+            <p class="post-meta">Posted by<a href="#">Start Bootstrap</a>            on September 24, 2019</p>
+          </div>
+          <hr>
+          <div class="post-preview"><a href="post.html">
+              <h2 class="post-title">I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.</h2></a>
+            <p class="post-meta">Posted by<a href="#">Start Bootstrap</a>            on September 18, 2019</p>
+          </div>
+          <hr>
+          <div class="post-preview"><a href="post.html">
+              <h2 class="post-title">Science has not yet mastered prophecy</h2>
+              <h3 class="post-subtitle">We predict too much for the next year and yet far too little for the next ten.</h3></a>
+            <p class="post-meta">Posted by<a href="#">Start Bootstrap</a>            on August 24, 2019</p>
+          </div>
+          <hr>
+          <div class="post-preview"><a href="post.html">
+              <h2 class="post-title">Failure is not an option</h2>
+              <h3 class="post-subtitle">Many say exploration is part of our destiny, but it’s actually our duty to future generations.</h3></a>
+            <p class="post-meta">Posted by<a href="#">Start Bootstrap</a>            on July 8, 2019</p>
+          </div>
+          <hr>
+          <!-- Pager-->
+          <div class="clearfix"><a href="#" class="btn btn-primary float-right">Older Posts →</a></div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <!-- Footer-->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item"><a href="#"><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-twitter fa-stack-1x fa-inverse"></i></span></a></li>
+              <li class="list-inline-item"><a href="#"><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i></span></a></li>
+              <li class="list-inline-item"><a href="#"><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-github fa-stack-1x fa-inverse"></i></span></a></li>
+            </ul>
+            <p class="copyright text-muted">Copyright © Your Website 2020</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap core JavaScript-->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom scripts for this template-->
+    <script src="/javascripts/clean-blog.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <script src="/javascripts/map.js"></script>
+  </body>
+</html>
