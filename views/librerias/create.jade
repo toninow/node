@@ -1,0 +1,32 @@
+extends ../layout
+
+block content
+    a(href='/librerias') Volver
+
+    br
+    br
+    br
+
+    h1 Añadir Nueva Libreria
+    
+    br
+    br
+    
+    form(action='/librerias/create' method='post')
+        label(for='id') ID:
+        input#id(type='text' name='id') 
+        br
+        label(for='nombre') nombre:
+        input#id(type='text' name='nombre') 
+        br
+        label(for='tipo') tipo:
+        input#id(type='text' name='tipo') 
+        br
+        label(for='latitud') latitud:
+        input#id(type='text' name='latitud') 
+        br
+        label(for='longitud') longitud:
+        input#id(type='text' name='longitud') 
+        br
+        br
+        input.btn(type='submit' value='añadir')

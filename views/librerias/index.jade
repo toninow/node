@@ -1,0 +1,23 @@
+extends ../layout
+
+block content
+    br
+    br
+    a(href='/bicicletas/create') Nueva libreria
+    br
+    br
+    table.table 
+        thead
+            tr
+                th(scope='col') #
+                th(scope='col') nombre
+                th(scope='col') tipo
+                th(scope='col') ubicacion
+        tbody   
+            each libreria in libs
+                tr
+                    th(scope='row')
+                      = libreria.id
+                    td= libreria.nombre
+                    td= libreria.tipo
+                    td= libreria.ubicacion
